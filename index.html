@@ -40,15 +40,8 @@
       webkitallowfullscreen="true"
       mozallowfullscreen="true"
       allow="fullscreen; camera; microphone; display-capture; geolocation;"
-      sandbox="allow-scripts allow-same-origin">
+      sandbox="allow-scripts allow-forms allow-popups allow-same-origin">
     </iframe>
-  <script>
-    window.onload = function (){
-      document.querySelector('iframe').requestFullscreen()catch((err) => {
-        console.error('error attempting to enable full-screen mode: ${err.message}');
-      });
-    };
-  </script>
   </div>
 </body>
 </html>
